@@ -53,4 +53,5 @@ public class AppTest
     public void testIntegerNegativePositive(){
     	assertEquals(14, App.addTwoIntegers(-12, 26));
     }
+    
 }

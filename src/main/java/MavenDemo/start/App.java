@@ -16,4 +16,8 @@ public class App {
 	public static double addTwoDouble(double n1, double n2) {
 		return n1 + n2;
 	}
+	
+	public static double divideTwoInteger(int n1, int n2){
+		return n1/n2;
+	}
 }
