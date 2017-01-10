@@ -1,3 +1,10 @@
 language: java
 sudo: false
 script: mvn install
+deploy:
+  provider: releases
+  api_key:
+    secure: jBUZff3nYsyL9XPgXciCbeL3M6osjNaSHG+ZiFL7ikP8oIiUg2fyuT6UvmkeVL4mpdYqkZ6suG2cVHaZb0d37qLGkFg8tRlKOzsHe/hN+L56EIjQ42uLWiEbyMz9j2xNLmz01k5BPIpcTKA/CjZdECotB4uGZ6g/frVVLz6sR13x+nJfwnHFYbnJSB/3cKYJ/Kas9rakNefyMqzNDTV6ABtwMofwOq+QIe3ejkDIwmdebUQlJyziytMqVKvhqwFjCkXGkKTdttM3i2PUWHfBauklj/0j5Y80hqlrzoD8Xb7MkGRAnMQXV7nB9QLWxrT4lifvOdqgNUu51MofaXbIoJtUOBapIozebpzwTTb8irWABKe+3eOLhQqsCe0lxaw03Ijsu4UXFVjOWyiZ2J9dm2EkpWhqANG1wC7Fmz399vZAElB90s4ow4K0zWAAMbJj6JFarEkU4/VKUafuBiU/aeWnLOx+UN3lb/3FdUB5HEwTAg9eciFG6QSTOSdY9pkuo+m+CxHqrfMeVDkO2d5zZKqZTrUeXmbf4Bu/Y4K82j9kZiQrKYK0BbZGWzZ/OW5T+ld281pwMv0FBoSWUqc0cukEUkfiN4/kdwTKTIJ26efXnhvZMxuuAnbDX2Pd2vXSixs3qHKLptHViLGbq3SvMAwgZe3qH1BuVcgYvaVU4uo=
+  file: "/home/travis/.m2/repository/MavenDemo/start/0.0.1-SNAPSHOT/start-0.0.1-SNAPSHOT.jar"
+  on:
+    repo: TheDeveloperDudeTheFifth/MavenDemo
